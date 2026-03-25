@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/mobile_layout.dart';
+
 class AdaptiveLayout extends StatelessWidget {
-  const AdaptiveLayout({super.key});
+  const AdaptiveLayout(
+      {super.key,
+      required this.moilbeLayout,
+      required this.tabletLayout,
+      required this.desktopLayout});
+  final WidgetBuilder moilbeLayout, tabletLayout, desktopLayout;
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth < 600) {
-       return const  MobileLayout();
+        return moilbeLayout(context);
       } else if (constraints.maxWidth < 900) {
-        return const Text('Tablet Layout');
+        return tabletLayout(context);
       } else {
-        return const Text('Desktop Layout');
+        return desktopLayout(context);
       }
     });
   }
