@@ -13,7 +13,7 @@ class CustomListTile extends StatelessWidget {
       width: 134,
       height: 48,
       child: ListTile(
-        tileColor: kListTileColor,
+        tileColor: Colors.white,
         leading: Text(
           'Monthly',
           style: Styles.textStyle16
