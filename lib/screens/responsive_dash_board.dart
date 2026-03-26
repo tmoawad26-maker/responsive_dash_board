@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/custom_responsive_dash_board.dart';
 
 class ResponsiveDashBoard extends StatelessWidget {
@@ -7,9 +8,10 @@ class ResponsiveDashBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   Scaffold(
-      drawer: const Drawer(),
+      drawer: const  CustomDrawer(),
       appBar: AppBar(),
       body: const  CustomResponsiveDashBoard(),
     );
   }
 }
+

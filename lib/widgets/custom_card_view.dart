@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/models/drawer_item_model.dart';
 import 'package:responsive_dash_board/utilts/constants.dart';
 import 'package:responsive_dash_board/utilts/styles.dart';
 import 'package:responsive_dash_board/widgets/custom_dash_board_details.dart';
 import 'package:responsive_dash_board/widgets/custom_list_tile.dart';
+import 'package:responsive_dash_board/widgets/invoice_date.dart';
 
 class CustomCardView extends StatelessWidget {
   const CustomCardView({super.key});
@@ -32,7 +34,7 @@ class CustomCardView extends StatelessWidget {
                       style: Styles.textStyle20
                           .copyWith(color: const Color(0xff064061)),
                     ),
-                    const CustomListTile()
+                   const  InvoiceDate() 
                   ],
                 ),
                 const SizedBox(

@@ -1,12 +1,13 @@
-import 'dart:collection';
-
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/models/drawer_item_model.dart';
 import 'package:responsive_dash_board/utilts/constants.dart';
 import 'package:responsive_dash_board/utilts/styles.dart';
 
 class CustomListTile extends StatelessWidget {
-  const CustomListTile({super.key});
-
+  const CustomListTile(
+      {super.key, required this.drawerItemModel, this.textColor, this.iconColor});
+  final DrawerItemModel drawerItemModel;
+  final Color? textColor , iconColor;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -14,15 +15,14 @@ class CustomListTile extends StatelessWidget {
       height: 48,
       child: ListTile(
         tileColor: Colors.white,
-        leading: Text(
-          'Monthly',
-          style: Styles.textStyle16
-              .copyWith(color: kTextColor, fontWeight: FontWeight.w500),
+        leading: Icon(
+          drawerItemModel.icon,
+          color: iconColor ?? kCardColor,
         ),
-       
-        trailing: const Icon(
-          Icons.arrow_downward,
-          color: kTextColor,
+        title: Text(
+          drawerItemModel.title,
+          style: Styles.textStyle16.copyWith(
+              color: textColor ?? kTextColor, fontWeight: FontWeight.w500),
         ),
       ),
     );
