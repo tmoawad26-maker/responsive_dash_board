@@ -24,17 +24,17 @@ class _ListDrawerItemsState extends State<ListDrawerItems> {
     return ListView.builder(
       itemBuilder: (context, index) {
         return CustomListTile(
-            drawerItemModel: ListDrawerItems.drawerItemModel[index],
-            onTap: () => setState(() {
-              if (currentIndex != index) {
-                currentIndex = index;
-              }
-            }),
-            isActive: currentIndex == index,
-            textColor:
-                currentIndex == index ? kPrimaryColor : const Color(0xff064061),
-            iconColor: currentIndex == index ? kPrimaryColor : Colors.grey,
-          );
+          drawerItemModel: ListDrawerItems.drawerItemModel[index],
+          onTap: () => setState(() {
+            if (currentIndex != index) {
+              currentIndex = index;
+            }
+          }),
+          isActive: currentIndex == index,
+          textColor:
+              currentIndex == index ? kPrimaryColor : const Color(0xff064061),
+          iconColor: currentIndex == index ? kPrimaryColor : Colors.grey,
+        );
       },
       itemCount: ListDrawerItems.drawerItemModel.length,
     );
