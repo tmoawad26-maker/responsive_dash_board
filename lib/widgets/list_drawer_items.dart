@@ -24,14 +24,15 @@ class _ListDrawerItemsState extends State<ListDrawerItems> {
     return SliverList.builder(
       itemBuilder: (context, index) {
         return Padding(
-          padding: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 20.0),
           child: CustomListTile(
             drawerItemModel: ListDrawerItems.drawerItemModel[index],
             onTap: () => setState(() {
               if (currentIndex != index) {
                 currentIndex = index;
               }
-            }),
+            }
+            ),
             isActive: currentIndex == index,
             textColor:
                 currentIndex == index ? kPrimaryColor : const Color(0xff064061),
