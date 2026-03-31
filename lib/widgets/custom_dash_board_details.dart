@@ -24,7 +24,7 @@ class CustomDashBoardDetails extends StatelessWidget {
         height: 216,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
-          color: cardColor ?? kCardColor,
+          color: cardColor ?? kPrimaryColor,
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
