@@ -12,27 +12,42 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Drawer(
-        child: Column(
-          children: [
-              CustomDrawerHeader(),
-              SizedBox(
-        height: 8,
-              ),
-              Expanded(child: SizedBox(child: ListDrawerItems())),
-              Expanded(
-        child: SizedBox(),
-              ),
-              InActiveDrawerItem(
-        drawerItemModel:
-            DrawerItemModel(title: 'Setting system', icon: Icons.settings),
-        iconColor: Colors.grey,
-              ),
-              InActiveDrawerItem(
-        drawerItemModel:
-            DrawerItemModel(title: 'Logout account', icon: Icons.logout),
-        iconColor: Color(0xffF3735E)
-              ),
-            ]));
+        child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(child: CustomDrawerHeader()),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 8,
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 8,
+            ),
+          ),
+          ListDrawerItems(),
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Expanded(child: SizedBox()),
+                InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                      title: 'Setting system', icon: Icons.settings),
+                  iconColor: Colors.grey,
+                ),
+                InActiveDrawerItem(
+                    drawerItemModel: DrawerItemModel(
+                        title: 'Logout account', icon: Icons.logout),
+                    iconColor: Color(0xffF3735E)),
+                    SizedBox(
+                  height: 48,
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
-

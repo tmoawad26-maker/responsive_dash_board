@@ -21,7 +21,7 @@ class _ListDrawerItemsState extends State<ListDrawerItems> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return SliverList.builder(
       itemBuilder: (context, index) {
         return CustomListTile(
           drawerItemModel: ListDrawerItems.drawerItemModel[index],
