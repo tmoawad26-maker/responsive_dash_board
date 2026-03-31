@@ -23,17 +23,20 @@ class _ListDrawerItemsState extends State<ListDrawerItems> {
   Widget build(BuildContext context) {
     return SliverList.builder(
       itemBuilder: (context, index) {
-        return CustomListTile(
-          drawerItemModel: ListDrawerItems.drawerItemModel[index],
-          onTap: () => setState(() {
-            if (currentIndex != index) {
-              currentIndex = index;
-            }
-          }),
-          isActive: currentIndex == index,
-          textColor:
-              currentIndex == index ? kPrimaryColor : const Color(0xff064061),
-          iconColor: currentIndex == index ? kPrimaryColor : Colors.grey,
+        return Padding(
+          padding: const EdgeInsets.only(top: 20),
+          child: CustomListTile(
+            drawerItemModel: ListDrawerItems.drawerItemModel[index],
+            onTap: () => setState(() {
+              if (currentIndex != index) {
+                currentIndex = index;
+              }
+            }),
+            isActive: currentIndex == index,
+            textColor:
+                currentIndex == index ? kPrimaryColor : const Color(0xff064061),
+            iconColor: currentIndex == index ? kPrimaryColor : Colors.grey,
+          ),
         );
       },
       itemCount: ListDrawerItems.drawerItemModel.length,
