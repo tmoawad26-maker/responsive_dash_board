@@ -5,6 +5,7 @@ import 'package:responsive_dash_board/utilts/styles.dart';
 import 'package:responsive_dash_board/widgets/custom_dash_board_details.dart';
 import 'package:responsive_dash_board/widgets/custom_list_tile.dart';
 import 'package:responsive_dash_board/widgets/all_expenses.dart';
+import 'package:responsive_dash_board/widgets/list_all_expenses_items.dart';
 
 class CustomCardView extends StatelessWidget {
   const CustomCardView({super.key});
@@ -40,43 +41,10 @@ class CustomCardView extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Expanded(
-                  child: Row(
-                    children: [
-                      const Expanded(
-                          child: CustomDashBoardDetails(title: 'Balance')),
-                      const SizedBox(
-                        width: 12,
-                      ),
-                      Expanded(
-                        child: CustomDashBoardDetails(
-                          title: 'Income',
-                          cardColor: kListTileColor,
-                          titlecolor: kTextColor,
-                          subTitleColor: const Color(0xffAAAAAA),
-                          amountColor: const Color(0xff4EB7F2),
-                          circleAvatarColor: Colors.grey.withOpacity(0.2),
-                          iconColor: Colors.blue,
-                          iconBackgroundColor: Colors.black,
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 12,
-                      ),
-                      Expanded(
-                        child: CustomDashBoardDetails(
-                          title: 'Expenses',
-                          cardColor: kListTileColor,
-                          titlecolor: kTextColor,
-                          subTitleColor: const Color(0xffAAAAAA),
-                          amountColor: const Color(0xff4EB7F2),
-                          circleAvatarColor: Colors.grey.withOpacity(0.2),
-                          iconColor: Colors.blue,
-                          iconBackgroundColor: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
+               const  Row(
+                  children: [
+                    Expanded(child: ListAllExpensesItems())
+                  ],
                 ),
               ],
             ),
@@ -86,3 +54,4 @@ class CustomCardView extends StatelessWidget {
     );
   }
 }
+

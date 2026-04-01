@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/models/all_expenses_model.dart';
 import 'package:responsive_dash_board/utilts/constants.dart';
 import 'package:responsive_dash_board/utilts/styles.dart';
 import 'package:responsive_dash_board/widgets/custom_header_card.dart';
@@ -6,17 +7,26 @@ import 'package:responsive_dash_board/widgets/custom_header_card.dart';
 class CustomDashBoardDetails extends StatelessWidget {
   const CustomDashBoardDetails(
       {super.key,
-      required this.title,
-      this.subTitle,
-      this.amount,
-       this.cardColor,
-       this.titlecolor,
-       this.subTitleColor,
-       this.amountColor, this.circleAvatarColor, this.iconColor, this.iconBackgroundColor, this.icon});
-  final String title;
-  final String? subTitle, amount;
-  final Color? cardColor, titlecolor, subTitleColor, amountColor ,
-   circleAvatarColor , iconColor , iconBackgroundColor , icon;
+      this.cardColor,
+      this.titlecolor,
+      this.subTitleColor,
+      required this.isActive,
+      required this.allExpensesModel,
+      this.amountColor,
+      this.circleAvatarColor,
+      this.iconColor,
+      this.iconBackgroundColor,
+      this.icon});
+  final AllExpensesModel allExpensesModel;
+  final Color? cardColor,
+      titlecolor,
+      subTitleColor,
+      amountColor,
+      circleAvatarColor,
+      iconColor,
+      iconBackgroundColor,
+      icon;
+  final bool isActive;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -31,14 +41,14 @@ class CustomDashBoardDetails extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-               CustomHeaderCard(
+              CustomHeaderCard(
                 circleAvatarColor: circleAvatarColor,
                 iconColor: iconColor,
                 iconBackgroundColor: iconBackgroundColor,
               ),
               const SizedBox(height: 34),
               Text(
-                title,
+                allExpensesModel.title,
                 style: Styles.textStyle16
                     .copyWith(color: titlecolor ?? Colors.white),
               ),
@@ -49,9 +59,9 @@ class CustomDashBoardDetails extends StatelessWidget {
                 width: 70,
                 height: 17,
                 child: Text(
-                  subTitle ?? 'April 2022',
-                  style: Styles.textStyle14
-                      .copyWith(color: subTitleColor ??  const Color(0xffFAFAFA)),
+                  allExpensesModel.subTitle,
+                  style: Styles.textStyle14.copyWith(
+                      color: subTitleColor ?? const Color(0xffFAFAFA)),
                 ),
               ),
               const SizedBox(height: 10),
@@ -59,7 +69,7 @@ class CustomDashBoardDetails extends StatelessWidget {
                 width: 89,
                 height: 29,
                 child: Text(
-                  amount ?? '\$20,129',
+                  allExpensesModel.price,
                   style: Styles.textStyle24
                       .copyWith(color: amountColor ?? Colors.white),
                 ),

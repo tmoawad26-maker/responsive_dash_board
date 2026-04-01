@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/custom_card_view.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
@@ -14,7 +15,8 @@ class DashBoardDesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Text('DashBoard Desktop Layout')),
+          child: CustomCardView(),
+        ),
       ],
     );
   }
