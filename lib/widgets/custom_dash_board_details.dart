@@ -31,7 +31,7 @@ class CustomDashBoardDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: 180,
-        height: 216,
+        height: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: cardColor ?? kPrimaryColor,
@@ -55,19 +55,12 @@ class CustomDashBoardDetails extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              SizedBox(
-                width: 70,
-                height: 17,
-                child: Text(
-                  allExpensesModel.subTitle,
-                  style: Styles.textStyle14.copyWith(
-                      color: subTitleColor ?? const Color(0xffFAFAFA)),
-                ),
+              Text(
+                allExpensesModel.subTitle,
+                style: Styles.textStyle14.copyWith(
+                    color: subTitleColor ?? const Color(0xffFAFAFA)),
               ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 89,
-                height: 29,
+              Expanded(
                 child: Text(
                   allExpensesModel.price,
                   style: Styles.textStyle24
