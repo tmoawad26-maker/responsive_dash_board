@@ -13,6 +13,7 @@ class ExpensesHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CircleAvatar(
             radius: 17,
@@ -25,7 +26,6 @@ class ExpensesHeader extends StatelessWidget {
               child: Center(child: SvgPicture.asset(imageUrl))
             )
           ),
-         const  Spacer(),
         Icon(Icons.arrow_forward_ios, color:
          iconBackgroundColor ??
          Colors.white, size: 24,)
