@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:responsive_dash_board/models/all_expenses_model.dart';
-import 'package:responsive_dash_board/models/drawer_item_model.dart';
-import 'package:responsive_dash_board/utilts/constants.dart';
 import 'package:responsive_dash_board/utilts/styles.dart';
-import 'package:responsive_dash_board/widgets/custom_dash_board_details.dart';
-import 'package:responsive_dash_board/widgets/custom_list_tile.dart';
 import 'package:responsive_dash_board/widgets/all_expenses.dart';
-import 'package:responsive_dash_board/widgets/list_all_expenses_items.dart';
-
 import '../utilts/asset_data.dart';
-import 'acitve_expenses_item.dart';
 import 'expenses_list_items.dart';
 
 class CustomCardView extends StatefulWidget {
