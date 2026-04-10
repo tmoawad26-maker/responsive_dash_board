@@ -3,7 +3,7 @@ import 'package:responsive_dash_board/models/all_expenses_model.dart';
 import 'package:responsive_dash_board/utilts/styles.dart';
 import 'package:responsive_dash_board/widgets/all_expenses.dart';
 import '../utilts/asset_data.dart';
-import 'expenses_list_items.dart';
+import 'active_expenses_items.dart';
 
 class CustomCardView extends StatefulWidget {
   const CustomCardView({super.key});
@@ -67,19 +67,17 @@ class _CustomCardViewState extends State<CustomCardView> {
                     children: List.generate(
                   allExpensesList.length,
                   (index) => Expanded(
-                    child: GestureDetector(
-                      onTap: () {
-                        if (selectedIndex != index) {
-                          setState(() {
-                            selectedIndex = index;
-                          });
-                        }
-                      },
-                      child: ExpensesListItems(
-                          allExpensesList: allExpensesList,
-                          idx: index,
-                          selectedIndex: selectedIndex),
-                    ),
+                    child: ActiveExpensesItems(allExpensesList: allExpensesList,
+                        index: index,
+                        onTap: ()
+                        {
+                          if (selectedIndex != index) {
+                            setState(() {
+                              selectedIndex = index;
+                            });
+                          }
+                        },
+                        selectedIndex: selectedIndex),
                   ),
                 )),
               ],
@@ -90,3 +88,4 @@ class _CustomCardViewState extends State<CustomCardView> {
     );
   }
 }
+
