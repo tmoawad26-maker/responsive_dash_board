@@ -2,31 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/all_expenses_model.dart';
 import 'package:responsive_dash_board/utilts/constants.dart';
 import 'package:responsive_dash_board/utilts/styles.dart';
-import 'package:responsive_dash_board/widgets/custom_header_card.dart';
+import 'package:responsive_dash_board/widgets/expenses_header.dart';
 
-class CustomDashBoardDetails extends StatelessWidget {
-  const CustomDashBoardDetails(
+class ExpensesItems extends StatelessWidget {
+  const ExpensesItems(
       {super.key,
       this.cardColor,
-      this.titlecolor,
-      this.subTitleColor,
-      required this.isActive,
+      this.titleColor,
+      this.dateColor,
+       this.isActive = false,
+        this.idxItems,
       required this.allExpensesModel,
       this.amountColor,
       this.circleAvatarColor,
-      this.iconColor,
       this.iconBackgroundColor,
-      this.icon});
+      this.icon, this.imageColor, required this.image});
   final AllExpensesModel allExpensesModel;
   final Color? cardColor,
-      titlecolor,
-      subTitleColor,
+      titleColor,
+      dateColor,
       amountColor,
       circleAvatarColor,
-      iconColor,
       iconBackgroundColor,
+    imageColor,
       icon;
+
   final bool isActive;
+    final int? idxItems ;
+    final Widget image;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -37,29 +40,28 @@ class CustomDashBoardDetails extends StatelessWidget {
           color: cardColor ?? kPrimaryColor,
         ),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CustomHeaderCard(
+              ExpensesHeader(
                 circleAvatarColor: circleAvatarColor,
-                iconColor: iconColor,
+                imageUrl: allExpensesModel.image,
+                imageColor: imageColor,
                 iconBackgroundColor: iconBackgroundColor,
               ),
               const SizedBox(height: 34),
               Text(
                 allExpensesModel.title,
                 style: Styles.textStyle16
-                    .copyWith(color: titlecolor ?? Colors.white),
+                    .copyWith(color: titleColor ?? Colors.white),
               ),
               const SizedBox(
                 height: 8,
               ),
-              Text(
-                allExpensesModel.subTitle,
-                style: Styles.textStyle14.copyWith(
-                    color: subTitleColor ?? const Color(0xffFAFAFA)),
-              ),
+              Text(allExpensesModel.date, style: Styles.textStyle14.copyWith(
+                color: dateColor ?? const  Color(0xffAAAAAA)
+              ),),
               Expanded(
                 child: Text(
                   allExpensesModel.price,

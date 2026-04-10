@@ -1,12 +1,13 @@
 class AllExpensesModel {
+  final String image;
   final String title;
-  final String subTitle;
   final String date;
   final String price;
 
  const  AllExpensesModel(
-      {required this.title,
-      required this.subTitle,
+      {
+        required this.image,
+        required this.title,
       required this.date,
       required this.price
       }
