@@ -15,10 +15,10 @@ class QuickInvoiceHeader extends StatelessWidget {
           Text('Quick Invoice',style: Styles.textStyle20.copyWith(
             color: kTextColor
           ),),
-         const  CircleAvatar(
-           radius: 15,
-            backgroundColor: Color(0xffFAFAFA),
-            child: Icon(Icons.add ,size: 20, color: kPrimaryColor,),
+           CircleAvatar(
+           radius: 17,
+            backgroundColor: Colors.grey.withOpacity(0.1),
+            child: const Icon(Icons.add ,size: 20, color: kPrimaryColor,),
           )
         ],
       ),
