@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/all_expenses_model.dart';
-import 'package:responsive_dash_board/utilts/constants.dart';
-import 'package:responsive_dash_board/utilts/styles.dart';
 import 'package:responsive_dash_board/widgets/expenses_header.dart';
+
+import '../core/utilts/constants.dart';
+import '../core/utilts/styles.dart';
 
 class ExpensesItems extends StatelessWidget {
   const ExpensesItems(

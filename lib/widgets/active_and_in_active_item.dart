@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/drawer_item_model.dart';
-import 'package:responsive_dash_board/utilts/constants.dart';
-import 'package:responsive_dash_board/utilts/styles.dart';
+
+import '../core/utilts/constants.dart';
+import '../core/utilts/styles.dart';
 
 class InActiveDrawerItem extends StatelessWidget {
   const InActiveDrawerItem({

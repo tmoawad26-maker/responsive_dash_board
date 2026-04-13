@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/drawer_item_model.dart';
-import 'package:responsive_dash_board/utilts/constants.dart';
 import 'package:responsive_dash_board/widgets/custom_list_tile.dart';
+
+import '../core/utilts/constants.dart';
+import '../generated/l10n.dart';
 
 class ListDrawerItems extends StatefulWidget {
   const ListDrawerItems({super.key});
-  static const List<DrawerItemModel> drawerItemModel = [
-    DrawerItemModel(title: 'Dashboard', icon: Icons.dashboard),
-    DrawerItemModel(title: ' My Transactions', icon: Icons.description),
-    DrawerItemModel(title: 'Wallet Account', icon: Icons.wallet),
-    DrawerItemModel(title: 'My Investments', icon: Icons.account_balance),
+  static  List<DrawerItemModel> drawerItemModel = [
+    DrawerItemModel(title: S.current.title, icon: Icons.dashboard),
+    DrawerItemModel(title: S.current.transactions, icon: Icons.description),
+     DrawerItemModel(title: S.current.wallet_account, icon: Icons.wallet),
+     DrawerItemModel(title: S.current.investments , icon: Icons.account_balance),
   ];
 
   @override

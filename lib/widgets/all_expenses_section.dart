@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/all_expenses_model.dart';
-import 'package:responsive_dash_board/utilts/styles.dart';
 import 'package:responsive_dash_board/widgets/all_expenses.dart';
-import '../utilts/asset_data.dart';
+import '../core/utilts/asset_data.dart';
+import '../core/utilts/styles.dart';
 import 'active_expenses_items.dart';
 
 class AllExpensesSection extends StatefulWidget {

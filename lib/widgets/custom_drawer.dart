@@ -4,6 +4,8 @@ import 'package:responsive_dash_board/widgets/active_and_in_active_item.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer_header.dart';
 import 'package:responsive_dash_board/widgets/list_drawer_items.dart';
 
+import '../generated/l10n.dart';
+
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({
     super.key,
@@ -11,38 +13,41 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Drawer(
-        child: CustomScrollView(
+    return Drawer(
+      child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(child: CustomDrawerHeader()),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(child: CustomDrawerHeader()),
+          const SliverToBoxAdapter(
             child: SizedBox(
               height: 8,
             ),
           ),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: SizedBox(
               height: 8,
             ),
           ),
-          ListDrawerItems(),
+          const ListDrawerItems(),
           SliverFillRemaining(
             hasScrollBody: false,
             child: Column(
               children: [
-                Expanded(child: SizedBox(
+                const Expanded(
+                    child: SizedBox(
                   height: 20,
                 )),
                 InActiveDrawerItem(
                   drawerItemModel: DrawerItemModel(
-                      title: 'Setting system', icon: Icons.settings),
+                      title: S.of(context).setting_system,
+                      icon: Icons.settings),
                   iconColor: Colors.grey,
                 ),
                 InActiveDrawerItem(
                     drawerItemModel: DrawerItemModel(
-                        title: 'Logout account', icon: Icons.logout),
-                    iconColor: Color(0xffF3735E)),
-                    SizedBox(
+                        title: S.of(context).layout_account,
+                        icon: Icons.logout),
+                    iconColor: const Color(0xffF3735E)),
+                const SizedBox(
                   height: 48,
                 ),
               ],

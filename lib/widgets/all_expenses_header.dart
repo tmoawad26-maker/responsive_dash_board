@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utilts/constants.dart';
-import 'package:responsive_dash_board/utilts/styles.dart';
+
+import '../core/utilts/constants.dart';
+import '../core/utilts/styles.dart';
+import '../generated/l10n.dart';
 class AllExpensesHeader extends StatelessWidget {
   const AllExpensesHeader({
     super.key,
@@ -14,7 +16,7 @@ class AllExpensesHeader extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            'Monthly',
+            S.of(context).periodType,
             style: Styles.textStyle16.copyWith(
               color: kTextColor,
               fontWeight: FontWeight.w500,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utilts/styles.dart';
+import 'package:responsive_dash_board/core/utilts/styles.dart';
+import 'package:responsive_dash_board/widgets/transaction_items_list.dart';
 import 'package:responsive_dash_board/widgets/transacton_items.dart';
 
 class LatestTransaction extends StatelessWidget {
@@ -16,7 +17,7 @@ class LatestTransaction extends StatelessWidget {
               fontWeight: FontWeight.w500, color: const Color(0xff064061)),
         ),
        const  SizedBox(height: 12,),
-       const  TransactionItems(),
+       const  TransactionItemsList()
 
       ],
     );

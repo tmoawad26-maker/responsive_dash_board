@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../core/utilts/constants.dart';
 import '../models/all_expenses_model.dart';
-import '../utilts/constants.dart';
 import 'custom_dash_board_details.dart';
 
 class ExpensesListItems extends StatelessWidget {
