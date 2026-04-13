@@ -5,14 +5,14 @@ import 'package:responsive_dash_board/widgets/all_expenses.dart';
 import '../utilts/asset_data.dart';
 import 'active_expenses_items.dart';
 
-class CustomCardView extends StatefulWidget {
-  const CustomCardView({super.key});
+class AllExpensesSection extends StatefulWidget {
+  const AllExpensesSection({super.key});
 
   @override
-  State<CustomCardView> createState() => _CustomCardViewState();
+  State<AllExpensesSection> createState() => _AllExpensesSectionState();
 }
 
-class _CustomCardViewState extends State<CustomCardView> {
+class _AllExpensesSectionState extends State<AllExpensesSection> {
   List<AllExpensesModel> allExpensesList = const [
     AllExpensesModel(
         title: 'Balance',

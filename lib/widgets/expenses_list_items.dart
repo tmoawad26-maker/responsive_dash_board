@@ -55,7 +55,7 @@ class ExpensesListItems extends StatelessWidget {
             selectedIndex == idx ? Colors.white : const Color(0xff4EB7F2),
         iconBackgroundColor: selectedIndex == idx ? Colors.white : kTextColor,
         circleAvatarColor: selectedIndex == idx
-            ? Colors.blue.withOpacity(0.3)
+            ? const  Color(0xff4EB7F2).withOpacity(0.9)
             : Colors.grey.withOpacity(0.2),
         imageColor:
             selectedIndex == idx ? Colors.white : const Color(0xff4EB7F2),

@@ -21,12 +21,12 @@ class ExpensesHeader extends StatelessWidget {
             child:  ColorFiltered(
               colorFilter:   ColorFilter.mode(
                 imageColor!,
-                BlendMode.srcIn, // changes the color while keeping shape
-              ),
-              child: Center(child: SvgPicture.asset(imageUrl))
-            )
+              BlendMode.srcIn, // changes the color while keeping shape
+            ),
+                child: Center(child: SvgPicture.asset(imageUrl)))
           ),
-        Icon(Icons.arrow_forward_ios, color:
+        Icon(Icons.arrow_forward_ios,
+          color:
          iconBackgroundColor ??
          Colors.white, size: 24,)
         ],

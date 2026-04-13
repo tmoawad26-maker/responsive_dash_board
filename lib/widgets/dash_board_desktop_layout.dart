@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/custom_card_view.dart';
+import 'package:responsive_dash_board/widgets/all_expenses_section.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
@@ -15,7 +15,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: CustomCardView(),
+          child: AllExpensesSection(),
         ),
       ],
     );
