@@ -44,8 +44,7 @@ class _AllExpensesSectionState extends State<AllExpensesSection> {
             borderRadius: BorderRadius.circular(12),
           ),
           child: Padding(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
