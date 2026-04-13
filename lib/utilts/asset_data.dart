@@ -6,4 +6,5 @@ class AssetData {
   static const kCardSend = 'assets/images/card-send.svg';
   static const kMoney = 'assets/images/moneys.svg';
   static const kVector = 'assets/images/Vector.png';
+  static const kFrame1 = 'assets/images/Frame (1).svg';
 }
