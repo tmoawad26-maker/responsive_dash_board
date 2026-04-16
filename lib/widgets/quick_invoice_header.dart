@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/core/utilts/constants.dart';
 
 import '../core/utilts/styles.dart';
+import '../generated/l10n.dart';
 class QuickInvoiceHeader extends StatelessWidget {
   const QuickInvoiceHeader({super.key});
 
@@ -10,7 +11,7 @@ class QuickInvoiceHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('Quick Invoice',style: Styles.textStyle20.copyWith(
+        Text(S.of(context).quick_invoice,style: Styles.textStyle20.copyWith(
           color: kTextColor
         ),),
          CircleAvatar(

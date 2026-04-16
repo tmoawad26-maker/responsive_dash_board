@@ -1,26 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/core/utilts/asset_data.dart';
 import 'package:responsive_dash_board/models/transaction_item_model.dart';
 import 'package:responsive_dash_board/widgets/transacton_items.dart';
 
+import '../generated/l10n.dart';
+
 class TransactionItemsList extends StatelessWidget {
   const TransactionItemsList({super.key});
-  static const List<TransactionItemModel> listTransaction = [
+  static List<TransactionItemModel> listTransaction = [
     TransactionItemModel(
-        image: 'assets/images/Frame.svg',
-        userName: 'Madrani Andi',
-        email: 'Madraniadi20@gmail'),
+        image: AssetData.kFrame,
+        userName: S.current.name,
+        email: S.current.email),
     TransactionItemModel(
-        image: 'assets/images/Frame (1).svg',
-        userName: 'Madrani Andi',
-        email: 'Madraniadi20@gmail'),
+        image: AssetData.kFrame1,
+        userName: S.current.name,
+        email: S.current.email),
     TransactionItemModel(
-        image: 'assets/images/Frame.svg',
-        userName: 'Madrani Andi',
-        email: 'Madraniadi20@gmail'),
+        image: AssetData.kFrame,
+        userName: S.current.name,
+        email: S.current.email),
     TransactionItemModel(
-        image: 'assets/images/Frame (1).svg',
-        userName: 'Madrani Andi',
-        email: 'Madraniadi20@gmail'),
+        image: AssetData.kFrame1,
+        userName: S.current.name,
+        email: S.current.email),
   ];
   @override
   Widget build(BuildContext context) {
