@@ -1,0 +1,12 @@
+{
+    "title" : "Responsive DashBoard",
+    "Welcome" : "Hello World",
+    "name" :  "Lekan Okeowo",
+    "email" : "Madraniadi20@gmail.com",
+    "transactions" : "My Transactions",
+    "investments" : "My Investments",
+    "wallet_account" : "Wallet Account",
+    "setting_system" : "Setting system",
+    "layout_account" : "Logout account",
+    "periodType" : "Monthly"
+}

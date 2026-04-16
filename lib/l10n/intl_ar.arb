@@ -1,0 +1,12 @@
+{
+    "title" : "انشاء لوحة تحكم متجاوبة",
+    "Welcome" : "اهلا بالعالم",
+    "name": "ليكان أوكيوو",
+    "email" : "Madraniadi20@gmail.com",
+    "transactions" : "عملياتى",
+    "investments" : "استثماراتى",
+    "wallet_account" : "حساب المحفظة",
+    "setting_system" : "نظام الاعدادات",
+    "layout_account" : "تسجيل الخروج",
+    "periodType" : "شهريا"
+}
