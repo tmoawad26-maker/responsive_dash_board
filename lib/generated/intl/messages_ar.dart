@@ -23,22 +23,11 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Welcome": MessageLookupByLibrary.simpleMessage("اهلا بالعالم"),
-    "all_expenses": MessageLookupByLibrary.simpleMessage("اجمالى المصروفات"),
-    "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
     "email": MessageLookupByLibrary.simpleMessage("Madraniadi20@gmail.com"),
-    "expenses": MessageLookupByLibrary.simpleMessage("المصروفات"),
-    "first_month": MessageLookupByLibrary.simpleMessage("ابريل"),
-    "income": MessageLookupByLibrary.simpleMessage("الدخل"),
     "investments": MessageLookupByLibrary.simpleMessage("استثماراتى"),
-    "latest_transaction": MessageLookupByLibrary.simpleMessage(
-      "احدث المعاملات",
-    ),
     "layout_account": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
-    "march_month": MessageLookupByLibrary.simpleMessage("مارس"),
     "name": MessageLookupByLibrary.simpleMessage("ليكان أوكيوو"),
     "periodType": MessageLookupByLibrary.simpleMessage("شهريا"),
-    "quick_invoice": MessageLookupByLibrary.simpleMessage("الفاتورة السريعة"),
-    "second_month": MessageLookupByLibrary.simpleMessage("يناير"),
     "setting_system": MessageLookupByLibrary.simpleMessage("نظام الاعدادات"),
     "title": MessageLookupByLibrary.simpleMessage("انشاء لوحة تحكم متجاوبة"),
     "transactions": MessageLookupByLibrary.simpleMessage("عملياتى"),

@@ -139,66 +139,6 @@ class S {
   String get periodType {
     return Intl.message('Monthly', name: 'periodType', desc: '', args: []);
   }
-
-  /// `Latest Transaction`
-  String get latest_transaction {
-    return Intl.message(
-      'Latest Transaction',
-      name: 'latest_transaction',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Quick Invoice`
-  String get quick_invoice {
-    return Intl.message(
-      'Quick Invoice',
-      name: 'quick_invoice',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `All Expenses`
-  String get all_expenses {
-    return Intl.message(
-      'All Expenses',
-      name: 'all_expenses',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Balance`
-  String get balance {
-    return Intl.message('Balance', name: 'balance', desc: '', args: []);
-  }
-
-  /// `April`
-  String get first_month {
-    return Intl.message('April', name: 'first_month', desc: '', args: []);
-  }
-
-  /// `Jan`
-  String get second_month {
-    return Intl.message('Jan', name: 'second_month', desc: '', args: []);
-  }
-
-  /// `March`
-  String get march_month {
-    return Intl.message('March', name: 'march_month', desc: '', args: []);
-  }
-
-  /// `Income`
-  String get income {
-    return Intl.message('Income', name: 'income', desc: '', args: []);
-  }
-
-  /// `Expenses`
-  String get expenses {
-    return Intl.message('Expenses', name: 'expenses', desc: '', args: []);
-  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
