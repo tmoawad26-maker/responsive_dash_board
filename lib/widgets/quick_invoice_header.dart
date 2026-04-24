@@ -11,7 +11,7 @@ class QuickInvoiceHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(S.of(context).quick_invoice,style: Styles.textStyle20.copyWith(
+        Text(S.of(context).quickInvoice,style: Styles.textStyle20.copyWith(
           color: kTextColor
         ),),
          CircleAvatar(

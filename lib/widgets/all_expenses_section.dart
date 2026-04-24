@@ -10,29 +10,30 @@ class AllExpensesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 18),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: CustomBackgroundContainer(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  S.of(context).all_expenses,
-                  style: Styles.textStyle20
-                      .copyWith(color: const Color(0xff064061)),
-                ),
-                const AllExpenses()
-              ],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            const AllExpensesItems(),
-          ],
+            padding: 10,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    S.of(context).allExpenses,
+                    style: Styles.textStyle20
+                        .copyWith(color: const Color(0xff064061)),
+                  ),
+                  const AllExpenses()
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const AllExpensesItems(),
+            ],
+          ),
         ),
-      ),
     );
   }
 }

@@ -23,11 +23,22 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Welcome": MessageLookupByLibrary.simpleMessage("Hello World"),
+    "allExpenses": MessageLookupByLibrary.simpleMessage("All Expenses"),
+    "balance": MessageLookupByLibrary.simpleMessage("Balance"),
     "email": MessageLookupByLibrary.simpleMessage("Madraniadi20@gmail.com"),
+    "expenses": MessageLookupByLibrary.simpleMessage("Expenses"),
+    "first_month": MessageLookupByLibrary.simpleMessage("Jan"),
+    "income": MessageLookupByLibrary.simpleMessage("Income"),
     "investments": MessageLookupByLibrary.simpleMessage("My Investments"),
+    "latestTransaction": MessageLookupByLibrary.simpleMessage(
+      "Latest Transactions",
+    ),
     "layout_account": MessageLookupByLibrary.simpleMessage("Logout account"),
+    "march_month": MessageLookupByLibrary.simpleMessage("March"),
     "name": MessageLookupByLibrary.simpleMessage("Lekan Okeowo"),
     "periodType": MessageLookupByLibrary.simpleMessage("Monthly"),
+    "quickInvoice": MessageLookupByLibrary.simpleMessage("Quick Invoice"),
+    "second_month": MessageLookupByLibrary.simpleMessage("April"),
     "setting_system": MessageLookupByLibrary.simpleMessage("Setting system"),
     "title": MessageLookupByLibrary.simpleMessage("Responsive DashBoard"),
     "transactions": MessageLookupByLibrary.simpleMessage("My Transactions"),

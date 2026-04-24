@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_dash_board/core/utilts/asset_data.dart';
+import 'package:responsive_dash_board/widgets/user_list_tile_info_widget.dart';
 
 import '../core/utilts/constants.dart';
 import '../core/utilts/styles.dart';
@@ -22,14 +23,7 @@ class CustomHeaderItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(12)),
       child: Row(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 12),
-            child: SvgPicture.asset(
-              AssetData.kFrame,
-              width: 32,
-              height: 32,
-            ),
-          ),
+        const   UserListTileInfoWidget(),
           const SizedBox(
             width: 3.5,
           ),
@@ -56,3 +50,5 @@ class CustomHeaderItem extends StatelessWidget {
     );
   }
 }
+
+

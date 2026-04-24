@@ -135,9 +135,69 @@ class S {
     );
   }
 
+  /// `Balance`
+  String get balance {
+    return Intl.message('Balance', name: 'balance', desc: '', args: []);
+  }
+
+  /// `Income`
+  String get income {
+    return Intl.message('Income', name: 'income', desc: '', args: []);
+  }
+
   /// `Monthly`
   String get periodType {
     return Intl.message('Monthly', name: 'periodType', desc: '', args: []);
+  }
+
+  /// `Jan`
+  String get first_month {
+    return Intl.message('Jan', name: 'first_month', desc: '', args: []);
+  }
+
+  /// `April`
+  String get second_month {
+    return Intl.message('April', name: 'second_month', desc: '', args: []);
+  }
+
+  /// `March`
+  String get march_month {
+    return Intl.message('March', name: 'march_month', desc: '', args: []);
+  }
+
+  /// `Expenses`
+  String get expenses {
+    return Intl.message('Expenses', name: 'expenses', desc: '', args: []);
+  }
+
+  /// `All Expenses`
+  String get allExpenses {
+    return Intl.message(
+      'All Expenses',
+      name: 'allExpenses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Latest Transactions`
+  String get latestTransaction {
+    return Intl.message(
+      'Latest Transactions',
+      name: 'latestTransaction',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quick Invoice`
+  String get quickInvoice {
+    return Intl.message(
+      'Quick Invoice',
+      name: 'quickInvoice',
+      desc: '',
+      args: [],
+    );
   }
 }
 

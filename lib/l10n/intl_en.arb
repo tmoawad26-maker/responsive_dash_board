@@ -8,4 +8,14 @@
     "wallet_account" : "Wallet Account",
     "setting_system" : "Setting system",
     "layout_account" : "Logout account",
+    "balance" : "Balance",
+    "income": "Income",
+    "periodType" : "Monthly",
+    "first_month" : "Jan",
+    "second_month": "April",
+    "march_month" : "March",
+    "expenses" : "Expenses",
+    "allExpenses": "All Expenses",
+    "latestTransaction" : "Latest Transactions",
+    "quickInvoice" : "Quick Invoice"
 }
