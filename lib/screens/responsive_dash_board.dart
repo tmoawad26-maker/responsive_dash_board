@@ -10,22 +10,22 @@ class ResponsiveDashBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   SafeArea(
+    return   const SafeArea(
       child: Scaffold(
-        drawer: const  CustomDrawer(),
-        appBar: AppBar(
-          iconTheme: const IconThemeData(
-            color: kLeadingColor
-          ),
-          backgroundColor: kPrimaryColor,
-          title: Text(S.of(context).title),
-          titleTextStyle: const  TextStyle(
-            color: Colors.white,
-            fontSize: 22,
-            fontWeight: FontWeight.w400
-          ),
-        ),
-        body: const  CustomResponsiveDashBoard(),
+        drawer: CustomDrawer(),
+        // appBar: AppBar(
+        //   iconTheme: const IconThemeData(
+        //     color: kLeadingColor
+        //   ),
+        //   // backgroundColor: kPrimaryColor,
+        //   // title: Text(S.of(context).title),
+        //   // titleTextStyle: const  TextStyle(
+        //   //   color: Colors.white,
+        //   //   fontSize: 22,
+        //   //   fontWeight: FontWeight.w400
+        //   // ),
+        // ),
+        body: CustomResponsiveDashBoard(),
       ),
     );
   }

@@ -5,16 +5,16 @@ import '../generated/l10n.dart';
 import '../models/all_expenses_model.dart';
 import 'active_expenses_items.dart';
 
-class AllExpensesItems extends StatefulWidget {
-  const AllExpensesItems({
+class AllExpensesItemsListView extends StatefulWidget {
+  const AllExpensesItemsListView({
     super.key,
   });
 
   @override
-  State<AllExpensesItems> createState() => _AllExpensesItemsState();
+  State<AllExpensesItemsListView> createState() => _AllExpensesItemsListViewState();
 }
 
-class _AllExpensesItemsState extends State<AllExpensesItems> {
+class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
   List<AllExpensesModel> allExpensesList = [
     AllExpensesModel(
         title: S.current.balance,

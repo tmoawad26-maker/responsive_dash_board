@@ -9,10 +9,8 @@ class SeparateItemsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const  Divider(
-      indent: 1,
-      endIndent: 1,
       color: Color(0xffF1F1F1),
-      height: 0,
+      height: 24,
       thickness: 1,
     );
   }

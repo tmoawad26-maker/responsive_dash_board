@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/all_expenses_section.dart';
 import 'package:responsive_dash_board/widgets/quick_invoice_section.dart';
 
-class MobileLayout extends StatelessWidget {
-  const MobileLayout({super.key});
+class DashboardMobileLayout extends StatelessWidget {
+  const DashboardMobileLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return const  Column(
       children: [
-        SizedBox(height: 20,),
-       Expanded(child: AllExpensesSection()),
-        SizedBox(height: 24,),
-        Expanded(child: QuickInvoiceSection())
+      AllExpensesSection(),
+        SizedBox(height: 12,),
+        QuickInvoiceSection()
       ],
     );
   }

@@ -15,7 +15,7 @@ class CustomDrawerHeader extends StatelessWidget {
       children: [
         CustomRectangleImage(),
         Expanded(
-          child: CustomHeaderItem(),
+          child: CustomListTileWidget(),
         )
       ],
     ));

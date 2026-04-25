@@ -7,7 +7,7 @@ import '../generated/l10n.dart';
 
 class TransactionItemsList extends StatelessWidget {
   const TransactionItemsList({super.key});
-  static List<UserListTileInfoModel> listTransaction = [
+  static   List<UserListTileInfoModel> listTransaction = [
     UserListTileInfoModel(
         image: AssetData.kFrame,
         userName: S.current.name,
@@ -31,21 +31,22 @@ class TransactionItemsList extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: List.generate(listTransaction.length, (index) {
-            return index == 0
-                ? IntrinsicWidth(
+            return index == 0 ?
+              IntrinsicWidth(
                     child: UserListTileInfoSection(
                       userListTileInfoModel: listTransaction[index],
                     ),
-                  )
-                : Padding(
+                  ) : Padding(
                     padding: const EdgeInsets.only(left: 12),
                     child: IntrinsicWidth(
                       child: UserListTileInfoSection(
-                        userListTileInfoModel: listTransaction[index],
+                    userListTileInfoModel: listTransaction[index],
                       ),
-                    ),
-                   );
-        },)
+                  )
+            );
+        },
+        )
+
       ),
     );
     return SizedBox(
