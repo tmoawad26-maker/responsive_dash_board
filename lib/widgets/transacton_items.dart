@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:responsive_dash_board/models/transaction_item_model.dart';
+import 'package:responsive_dash_board/models/user_list_tile_model.dart';
 import '../core/utilts/asset_data.dart';
 import '../core/utilts/constants.dart';
 import '../core/utilts/styles.dart';
 
 class TransactionItems extends StatelessWidget {
   const TransactionItems({super.key, required this.transactionItemModel });
-        final TransactionItemModel transactionItemModel;
+        final UserListTileInfoModel transactionItemModel;
   @override
   Widget build(BuildContext context) {
     return Row(
