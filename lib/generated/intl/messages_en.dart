@@ -26,6 +26,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "allExpenses": MessageLookupByLibrary.simpleMessage("All Expenses"),
     "balance": MessageLookupByLibrary.simpleMessage("Balance"),
     "email": MessageLookupByLibrary.simpleMessage("Madraniadi20@gmail.com"),
+    "emailAbdo": MessageLookupByLibrary.simpleMessage("Abdo@gamil.com"),
+    "emailJosua": MessageLookupByLibrary.simpleMessage("josua@gamil.com"),
+    "emailMohamed": MessageLookupByLibrary.simpleMessage(
+      "Mohamedhassan@gamil.com",
+    ),
     "expenses": MessageLookupByLibrary.simpleMessage("Expenses"),
     "first_month": MessageLookupByLibrary.simpleMessage("Jan"),
     "income": MessageLookupByLibrary.simpleMessage("Income"),
@@ -42,6 +47,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "setting_system": MessageLookupByLibrary.simpleMessage("Setting system"),
     "title": MessageLookupByLibrary.simpleMessage("Responsive DashBoard"),
     "transactions": MessageLookupByLibrary.simpleMessage("My Transactions"),
+    "userName2": MessageLookupByLibrary.simpleMessage("Josua Nunito"),
+    "userName3": MessageLookupByLibrary.simpleMessage("Mohamed Hassan"),
+    "userName4": MessageLookupByLibrary.simpleMessage("Abdelrhman Mahmoud"),
     "wallet_account": MessageLookupByLibrary.simpleMessage("Wallet Account"),
   };
 }

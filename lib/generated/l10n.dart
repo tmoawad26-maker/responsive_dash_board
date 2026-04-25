@@ -75,6 +75,61 @@ class S {
     return Intl.message('Lekan Okeowo', name: 'name', desc: '', args: []);
   }
 
+  /// `Josua Nunito`
+  String get userName2 {
+    return Intl.message('Josua Nunito', name: 'userName2', desc: '', args: []);
+  }
+
+  /// `Mohamed Hassan`
+  String get userName3 {
+    return Intl.message(
+      'Mohamed Hassan',
+      name: 'userName3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Abdelrhman Mahmoud`
+  String get userName4 {
+    return Intl.message(
+      'Abdelrhman Mahmoud',
+      name: 'userName4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `josua@gamil.com`
+  String get emailJosua {
+    return Intl.message(
+      'josua@gamil.com',
+      name: 'emailJosua',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mohamedhassan@gamil.com`
+  String get emailMohamed {
+    return Intl.message(
+      'Mohamedhassan@gamil.com',
+      name: 'emailMohamed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Abdo@gamil.com`
+  String get emailAbdo {
+    return Intl.message(
+      'Abdo@gamil.com',
+      name: 'emailAbdo',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Madraniadi20@gmail.com`
   String get email {
     return Intl.message(

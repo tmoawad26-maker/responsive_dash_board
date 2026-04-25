@@ -26,6 +26,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "allExpenses": MessageLookupByLibrary.simpleMessage("اجمالى المصروفات"),
     "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
     "email": MessageLookupByLibrary.simpleMessage("Madraniadi20@gmail.com"),
+    "emailAbdo": MessageLookupByLibrary.simpleMessage("Abdo@gamil.com"),
+    "emailJosua": MessageLookupByLibrary.simpleMessage("josua@gamil.com"),
+    "emailMohamed": MessageLookupByLibrary.simpleMessage(
+      "Mohamedhassan@gamil.com",
+    ),
     "expenses": MessageLookupByLibrary.simpleMessage("الصروفات"),
     "first_month": MessageLookupByLibrary.simpleMessage("يناير"),
     "income": MessageLookupByLibrary.simpleMessage("الدخل"),
@@ -40,6 +45,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "setting_system": MessageLookupByLibrary.simpleMessage("نظام الاعدادات"),
     "title": MessageLookupByLibrary.simpleMessage("انشاء لوحة تحكم متجاوبة"),
     "transactions": MessageLookupByLibrary.simpleMessage("عملياتى"),
+    "userName2": MessageLookupByLibrary.simpleMessage("جوسون نيكولا"),
+    "userName3": MessageLookupByLibrary.simpleMessage("محمود حسن"),
+    "userName4": MessageLookupByLibrary.simpleMessage("عبدالرحمن محمود"),
     "wallet_account": MessageLookupByLibrary.simpleMessage("حساب المحفظة"),
   };
 }

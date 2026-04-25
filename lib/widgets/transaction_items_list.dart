@@ -14,16 +14,16 @@ class TransactionItemsList extends StatelessWidget {
         email: S.current.email),
     UserListTileInfoModel(
         image: AssetData.kFrame1,
-        userName: S.current.name,
-        email: S.current.email),
+        userName: S.current.userName2,
+        email: S.current.emailJosua),
     UserListTileInfoModel(
         image: AssetData.kFrame,
-        userName: S.current.name,
-        email: S.current.email),
+        userName: S.current.userName3,
+        email: S.current.emailMohamed),
     UserListTileInfoModel(
         image: AssetData.kFrame,
-        userName: S.current.name,
-        email: S.current.email),
+        userName: S.current.userName4,
+        email: S.current.emailAbdo),
   ];
   @override
   Widget build(BuildContext context) {
