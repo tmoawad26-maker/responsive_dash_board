@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/customer_data_widget.dart';
 import 'package:responsive_dash_board/widgets/separate_items_widget.dart';
 import 'package:responsive_dash_board/widgets/transaction_items_list.dart';
 import '../core/utilts/styles.dart';
@@ -28,14 +29,7 @@ class LatestTransaction extends StatelessWidget {
     );
   }
 }
-class CustomerDataWidget extends StatelessWidget {
-  const CustomerDataWidget({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
 
 
 
