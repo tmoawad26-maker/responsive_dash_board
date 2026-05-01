@@ -15,14 +15,18 @@ class CustomTextField extends StatelessWidget {
             hintStyle: Styles.textStyle16.copyWith(
                 color: const Color(0xffAAAAAA),
             ),
-            border: const OutlineInputBorder(),
+            border: buildOutlineInputBorder(),
             filled: true,
             fillColor: const Color(0xffFAFAFA),
-            enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(12)
-            )
+            enabledBorder: buildOutlineInputBorder()
             )
         );
+  }
+
+  OutlineInputBorder buildOutlineInputBorder() {
+    return OutlineInputBorder(
+          borderSide: BorderSide.none,
+          borderRadius: BorderRadius.circular(12),
+          );
   }
 }
