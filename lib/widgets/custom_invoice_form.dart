@@ -17,7 +17,7 @@ class CustomInvoiceForm extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: 24,
+             width: 16,
             ),
             Expanded(
               child: CustomerDataWidget(
@@ -27,27 +27,34 @@ class CustomInvoiceForm extends StatelessWidget {
             ),
           ],
          ),
+         
+        Row(
+          children: [
+            Expanded(
+              child: CustomerDataWidget(
+                title: 'Item name',
+                hintText: 'Type customer name',
+              ),
+            ),
+            SizedBox(
+              width: 16,
+            ),
+            Expanded(
+              child: CustomerDataWidget(
+                title: 'Item mount',
+                hintText: 'USD',
+                suffixIcon: Icon(Icons.arrow_downward,
+                  size: 20,
+                  color: Color(0xff064061),),
+              ),
+            ),
+          ],
+        ),
+          Text('Add more details',) 
+           
+           ],
+           
 
-        // Row(
-        //   children: [
-        //     Expanded(
-        //       child: CustomerDataWidget(
-        //         title: 'Type Customer Items',
-        //         hintText: 'Enter Items',
-        //       ),
-        //     ),
-        //     SizedBox(
-        //       width: 24,
-        //     ),
-        //     Expanded(
-        //       child: CustomerDataWidget(
-        //         title: 'Type Customer Invoice Number',
-        //         hintText: 'Enter Customer Invoice Number',
-        //       ),
-        //     ),
-        //   ],
-        // )
-           ]
         );
   }
 }

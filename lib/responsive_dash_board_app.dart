@@ -18,7 +18,7 @@ class ResponsiveDashboardApp extends StatelessWidget {
             ],
             supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
-      home: const ResponsiveDashBoard(),
+      home: const DashboardScreen(),
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xffF7F9FA),
       ),

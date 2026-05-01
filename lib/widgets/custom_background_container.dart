@@ -5,13 +5,15 @@ class CustomBackgroundContainer extends StatelessWidget {
       {super.key,
       required this.child,
       this.padding,
-      this.containerColor});
+      this.containerColor, this.height});
   final Widget child;
   final double? padding;
   final Color? containerColor;
+  final double? height;
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: height,
       decoration: BoxDecoration(
           color: containerColor ?? Colors.white,
           borderRadius: BorderRadius.circular(12)),

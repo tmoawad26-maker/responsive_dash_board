@@ -21,7 +21,6 @@ class QuickInvoiceHeader extends StatelessWidget {
           backgroundColor: Colors.grey.withOpacity(0.1),
           child: const Icon(
             Icons.add,
-            // size: 20,
             color: kPrimaryColor,
           ),
         )

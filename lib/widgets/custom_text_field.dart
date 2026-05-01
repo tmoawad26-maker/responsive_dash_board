@@ -3,15 +3,17 @@ import 'package:responsive_dash_board/core/utilts/styles.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
-    required this.hintText
+    required this.hintText, this.suffixIcon
   });
   final String hintText;
+  final Icon?suffixIcon;
 
   @override
   Widget build(BuildContext context) {
    return  TextField(
         decoration: InputDecoration(
             hintText: hintText,
+            suffixIcon: suffixIcon,
             hintStyle: Styles.textStyle16.copyWith(
                 color: const Color(0xffAAAAAA),
             ),

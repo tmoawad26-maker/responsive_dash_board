@@ -11,4 +11,6 @@ class Styles {
       fontSize: 24, fontFamily: 'Montserrat', fontWeight: FontWeight.w600);
   static const textStyle12 = TextStyle(
       fontSize: 12, fontFamily: 'Montserrat', fontWeight: FontWeight.w400);
+  static const textStyle18 = TextStyle(
+      fontSize: 18, fontFamily: 'Montserrat', fontWeight: FontWeight.w600);
 }
