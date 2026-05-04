@@ -5,8 +5,8 @@ import 'package:responsive_dash_board/widgets/expenses_header.dart';
 import '../core/utilts/constants.dart';
 import '../core/utilts/styles.dart';
 
-class ExpensesItems extends StatelessWidget {
-  const ExpensesItems(
+class CustomCardItemWidget extends StatelessWidget {
+  const CustomCardItemWidget(
       {super.key,
       this.cardColor,
       this.titleColor,
@@ -63,12 +63,10 @@ class ExpensesItems extends StatelessWidget {
               Text(allExpensesModel.date, style: Styles.textStyle14.copyWith(
                 color: dateColor ?? const  Color(0xffAAAAAA)
               ),),
-              Expanded(
-                child: Text(
-                  allExpensesModel.price,
-                  style: Styles.textStyle24
-                      .copyWith(color: amountColor ?? Colors.white),
-                ),
+              Text(
+                allExpensesModel.price,
+                style: Styles.textStyle24
+                    .copyWith(color: amountColor ?? Colors.white),
               ),
             ],
           ),

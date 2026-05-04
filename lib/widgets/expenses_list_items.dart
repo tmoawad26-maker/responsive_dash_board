@@ -22,7 +22,7 @@ class ExpensesListItems extends StatelessWidget {
     if (idx == 1) {
       return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
-        child: ExpensesItems(
+        child: CustomCardItemWidget(
           allExpensesModel: allExpensesList[idx],
           isActive: selectedIndex == idx,
           cardColor: selectedIndex == idx ? kPrimaryColor : kListTileColor,
@@ -42,7 +42,7 @@ class ExpensesListItems extends StatelessWidget {
         ),
       );
     } else {
-      return ExpensesItems(
+      return CustomCardItemWidget(
         allExpensesModel: allExpensesList[idx],
         isActive: selectedIndex == idx,
         cardColor: selectedIndex == idx ? kPrimaryColor : kListTileColor,
