@@ -17,6 +17,7 @@ class CustomContainerCardWidget extends StatelessWidget {
           color: kPrimaryColor,
           image: const DecorationImage(
             image: AssetImage(AssetData.backgroundCard),
+            fit: BoxFit.fill,
           ),
         ),
         child:    Column(
@@ -25,7 +26,7 @@ class CustomContainerCardWidget extends StatelessWidget {
             const MyCardHeader(),
           const  Expanded(child: SizedBox()),
            Padding(
-             padding: const EdgeInsets.only(right: 48 - 24),
+             padding: const EdgeInsets.only(right: 24.0),
              child: Column(
               children: [
                  Text('0918 8124 0042 8129',style: Styles.textStyle16.copyWith(
@@ -38,7 +39,7 @@ class CustomContainerCardWidget extends StatelessWidget {
               ],
              ),
            ),
-          const  Expanded(child:   SizedBox(height: 54 - 28)),
+            const  Expanded(child:   SizedBox(height: 54 - 28)),
           ],
         ),
       ),
