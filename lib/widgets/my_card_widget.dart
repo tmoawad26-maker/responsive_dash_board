@@ -7,16 +7,13 @@ class MyCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const  Padding(
-      padding:  EdgeInsets.only(right: 32 , top: 40),
-      child:   CustomBackgroundContainer(
-        child: Column(
-          children: [
+    return const  CustomBackgroundContainer(
+      child: Column(
+        children: [
             MyCardDetailsSection(),
-          ],
-        ) 
-        
-        ),
-    );
+        ],
+      ) 
+      
+      );
   }
 }
