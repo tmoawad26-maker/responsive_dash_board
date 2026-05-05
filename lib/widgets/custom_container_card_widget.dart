@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/core/utilts/asset_data.dart';
 import 'package:responsive_dash_board/core/utilts/constants.dart';
 import 'package:responsive_dash_board/core/utilts/styles.dart';
-import 'package:responsive_dash_board/widgets/my_card_details_section.dart';
+import 'package:responsive_dash_board/widgets/my_card_header.dart';
 
 class CustomContainerCardWidget extends StatelessWidget {
   const CustomContainerCardWidget({super.key});
