@@ -21,13 +21,14 @@ class CustomContainerCardWidget extends StatelessWidget {
           ),
         ),
         child:    Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+         mainAxisAlignment: MainAxisAlignment.end,
           children: [
             const MyCardHeader(),
           const  Expanded(child: SizedBox()),
            Padding(
-             padding: const EdgeInsets.only(right: 24.0),
+             padding: const EdgeInsets.only(right: 10),
              child: Column(
+               
               children: [
                  Text('0918 8124 0042 8129',style: Styles.textStyle16.copyWith(
                 color: const Color(0xffffffff),
@@ -39,7 +40,7 @@ class CustomContainerCardWidget extends StatelessWidget {
               ],
              ),
            ),
-            const  Expanded(child:   SizedBox(height: 54 - 28)),
+          const   Expanded(child:  SizedBox(height: 54 - 28)),
           ],
         ),
       ),
