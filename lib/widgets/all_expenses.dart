@@ -13,6 +13,6 @@ class AllExpenses extends StatelessWidget {
           color: const Color(0xffF5F5F5),
           borderRadius: BorderRadius.circular(12),
         ),
-        child: const AllExpensesHeader());
+        child: const DateExpensesAndIncome());
   }
 }

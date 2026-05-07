@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../core/utilts/constants.dart';
 import '../core/utilts/styles.dart';
 import '../generated/l10n.dart';
-class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({
+class DateExpensesAndIncome extends StatelessWidget {
+  const DateExpensesAndIncome({
     super.key,
   });
 
