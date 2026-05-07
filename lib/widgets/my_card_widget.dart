@@ -14,9 +14,7 @@ class _MyCardWidgetState extends State<MyCardWidget> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return  const  CustomBackgroundContainer(
-      child: CustomContainerCardWidget() 
-      );
+    return const  CustomContainerCardWidget();
   }
 }
 

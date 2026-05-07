@@ -3,8 +3,8 @@ import 'package:responsive_dash_board/core/utilts/styles.dart';
 import 'package:responsive_dash_board/widgets/transaction_history_header_widget.dart';
 import 'package:responsive_dash_board/widgets/transaction_history_list_view.dart';
 
-class TransactionHistoryWidget extends StatelessWidget {
-  const TransactionHistoryWidget({super.key});
+class TransactionHistorySection extends StatelessWidget {
+  const TransactionHistorySection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class TransactionHistoryWidget extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        const TransactionHistoryListView()
+      const TransactionHistoryListView()
       ],
     );
   }

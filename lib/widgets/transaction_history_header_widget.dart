@@ -16,10 +16,13 @@ class TransactionHistoryHeaderWidget extends StatelessWidget {
           'Transaction History',
           style: Styles.textStyle20.copyWith(color: kTextColor),
         ),
-        Text(
-          'See all',
-          style: Styles.textStyle16
-              .copyWith(color: kPrimaryColor, fontWeight: FontWeight.w500),
+        Padding(
+          padding: const EdgeInsets.only(right: 10),
+          child: Text(
+            'See all',
+            style: Styles.textStyle16
+                .copyWith(color: kPrimaryColor, fontWeight: FontWeight.w500),
+          ),
         )
       ],
     );
