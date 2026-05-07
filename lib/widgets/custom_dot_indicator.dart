@@ -11,8 +11,8 @@ class CustomDotIndicator extends StatelessWidget {
       margin: const EdgeInsets.only(top: 27 - 19),
       width: isActive ? 32 : 8,
       height: 8,
-      decoration:   BoxDecoration(
-       shape: BoxShape.circle,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
         color: isActive ? kPrimaryColor : const  Color(0xffE8E8E8)
       ),
     );

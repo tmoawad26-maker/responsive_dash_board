@@ -19,9 +19,10 @@ class TransactionHistoryItem extends StatelessWidget {
         style: Styles.textStyle16.copyWith(
             fontWeight: FontWeight.w400, color: const Color(0xffAAAAAA)),
       ),
-      trailing:   Text('\$20,129',style: Styles.textStyle20.copyWith(
-        color:  const Color(0xffF3735E)
-      ),),
+      trailing: Text(
+        '\$20,129',
+        style: Styles.textStyle20.copyWith(color: const Color(0xffF3735E)),
+      ),
     );
   }
 }

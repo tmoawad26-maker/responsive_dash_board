@@ -21,24 +21,26 @@ class CustomContainerCardWidget extends StatelessWidget {
           ),
         ),
         child:    Column(
-         mainAxisAlignment: MainAxisAlignment.end,
           children: [
             const MyCardHeader(),
           const  Expanded(child: SizedBox()),
-           Padding(
-             padding: const EdgeInsets.only(right: 10),
-             child: Column(
-               
-              children: [
-                 Text('0918 8124 0042 8129',style: Styles.textStyle16.copyWith(
-                color: const Color(0xffffffff),
-              ),),
-              Text('12/20-124',style: Styles.textStyle16.copyWith(
-                color: const Color(0xffffffff),
-                fontWeight: FontWeight.w400,
-              ),),
-              ],
-             ),
+           Column(
+             mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+               Text('0918 8124 0042 8129',style: Styles.textStyle16.copyWith(
+              color: const Color(0xffffffff),
+            ),),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 24.0),
+                child: Text('12/20-124',style: Styles.textStyle16.copyWith(
+                  color: const Color(0xffffffff),
+                  fontWeight: FontWeight.w400,
+                ),),
+              ),
+            ),
+            ],
            ),
           const   Expanded(child:  SizedBox(height: 54 - 28)),
           ],

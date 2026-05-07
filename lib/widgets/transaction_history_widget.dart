@@ -9,6 +9,7 @@ class TransactionHistoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -25,6 +26,12 @@ class TransactionHistoryWidget extends StatelessWidget {
           ],
         ),
        const  SizedBox(height: 16,),
+       Text('13 April 2022',style: Styles.textStyle16.copyWith(
+        fontWeight: FontWeight.w500,
+        color: const  Color(0xffAAAAAA)
+       ),),
+
+       const   SizedBox(height: 56,),
         const TransactionHistoryItem()
       ],
     );
