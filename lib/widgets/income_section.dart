@@ -20,31 +20,7 @@ class IncomeSection extends StatelessWidget {
           child: Row(
             children: [
               Expanded(child: IncomeChart()),
-              Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IncomeDetails(
-                    title: 'Design service',
-                    trailing: '40%',
-                    dotColor: Color(0xff208CC8),
-                  ),
-                  IncomeDetails(
-                    title: 'Design product',
-                    trailing: '25%',
-                  ),
-                  IncomeDetails(
-                    title: 'Product royalti',
-                    trailing: '20%',
-                    dotColor: Color(0xff064061),
-                  ),
-                  IncomeDetails(
-                    title: 'Other',
-                    trailing: '22%',
-                    dotColor: Color(0xffE2DECD),
-                  ),
-                ],
-              ))
+              Expanded(child: IncomeDetails())
             ],
           ),
         )

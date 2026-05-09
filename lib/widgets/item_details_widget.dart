@@ -32,3 +32,4 @@ class ItemDetailsWidget extends StatelessWidget {
     );
   }
 }
+

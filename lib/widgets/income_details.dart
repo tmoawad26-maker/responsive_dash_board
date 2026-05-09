@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/core/utilts/constants.dart';
-import 'package:responsive_dash_board/core/utilts/styles.dart';
-import 'package:responsive_dash_board/models/income_details_model.dart';
-import 'package:responsive_dash_board/widgets/custom_dot_income_details.dart';
-import 'package:responsive_dash_board/widgets/item_details_widget.dart';
+import 'package:responsive_dash_board/widgets/income_item_details_list.dart';
+
 
 class IncomeDetails extends StatelessWidget {
   const IncomeDetails(
@@ -12,7 +9,7 @@ class IncomeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ItemDetailsWidget();
+    return const  IncomeItemDetailsList();
   }
 }
 
