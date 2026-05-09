@@ -19,14 +19,13 @@ class IncomeItemDetailsList extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-        children: List.generate(
-            incomeDetailsList.length,
-        (index) =>
-            ItemDetailsWidget(incomeDetailsModel: incomeDetailsList[index]),
-      ),
+    return ListView.builder(
+      itemCount: incomeDetailsList.length,
+      itemBuilder: (context, index) {
+        return ItemDetailsWidget(incomeDetailsModel: incomeDetailsList[index]);
+      },
     );
 
   }
 }
+

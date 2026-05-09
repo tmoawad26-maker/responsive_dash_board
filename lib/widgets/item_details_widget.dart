@@ -17,12 +17,10 @@ class ItemDetailsWidget extends StatelessWidget {
       leading: CustomDotIncomeDetails(
         dotColor: incomeDetailsModel.dotColor,
       ),
-      title: Expanded(
-        child: Text(
-          incomeDetailsModel.title,
-          style: Styles.textStyle16
-              .copyWith(color: kTextColor, fontWeight: FontWeight.w400),
-        ),
+      title: Text(
+        incomeDetailsModel.title,
+        style: Styles.textStyle16
+            .copyWith(color: kTextColor, fontWeight: FontWeight.w400),
       ),
       trailing: Text(
         incomeDetailsModel.percentage,
