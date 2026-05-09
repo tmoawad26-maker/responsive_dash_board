@@ -1,50 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/core/utilts/constants.dart';
 import 'package:responsive_dash_board/core/utilts/styles.dart';
+import 'package:responsive_dash_board/models/income_details_model.dart';
 import 'package:responsive_dash_board/widgets/custom_dot_income_details.dart';
+import 'package:responsive_dash_board/widgets/item_details_widget.dart';
 
 class IncomeDetails extends StatelessWidget {
   const IncomeDetails(
-      {super.key, required this.title, required this.trailing, this.dotColor});
-  final String title, trailing;
-  final Color? dotColor;
+      {super.key});
+  
 
   @override
   Widget build(BuildContext context) {
-    return ItemDetailsWidget(dotColor: dotColor, title: title, trailing: trailing);
+    return ItemDetailsWidget();
   }
 }
 
-class ItemDetailsWidget extends StatelessWidget {
-  const ItemDetailsWidget({
-    super.key,
-    required this.dotColor,
-    required this.title,
-    required this.trailing,
-  });
-
-  final Color? dotColor;
-  final String title;
-  final String trailing;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: CustomDotIncomeDetails(
-        dotColor: dotColor ?? kPrimaryColor,
-      ),
-      title: Expanded(
-        child: Text(
-          title,
-          style: Styles.textStyle16
-              .copyWith(color: kTextColor, fontWeight: FontWeight.w400),
-        ),
-      ),
-      trailing: Text(
-        trailing,
-        style: Styles.textStyle16.copyWith(
-            fontWeight: FontWeight.w500, color: const Color(0xff208CC8)),
-      ),
-    );
-  }
-}
