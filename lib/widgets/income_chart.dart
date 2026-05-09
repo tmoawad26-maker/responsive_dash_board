@@ -1,4 +1,4 @@
-import 'dart:developer';
+
 
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -31,23 +31,23 @@ class _IncomeChartState extends State<IncomeChart> {
         sections: [
           PieChartSectionData(
               value: 40,
-              radius: touchSectionIndex == 0 ? 60 : 50,
+              radius: touchSectionIndex == 0 ? 30 : 40,
               showTitle: false,
               color: const Color(0xff208CC8)),
           PieChartSectionData(
             value: 25,
-            radius: touchSectionIndex == 1 ? 60 : 50,
+            radius: touchSectionIndex == 1 ? 30 : 40,
             showTitle: false,
             color: const Color(0xff4EB7F2),
           ),
           PieChartSectionData(
               value: 20,
-              radius: touchSectionIndex == 2 ? 60 : 50,
+              radius: touchSectionIndex == 2 ? 30 : 40,
               color: const Color(0xff064061),
               showTitle: false),
           PieChartSectionData(
               value: 22,
-              radius: touchSectionIndex == 3 ? 60 : 50,
+              radius: touchSectionIndex == 3 ? 30 : 40,
               color: const Color(0xffE2DECD),
               showTitle: false),
         ]);
