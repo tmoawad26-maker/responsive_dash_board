@@ -11,6 +11,24 @@ class IncomeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return ItemDetailsWidget(dotColor: dotColor, title: title, trailing: trailing);
+  }
+}
+
+class ItemDetailsWidget extends StatelessWidget {
+  const ItemDetailsWidget({
+    super.key,
+    required this.dotColor,
+    required this.title,
+    required this.trailing,
+  });
+
+  final Color? dotColor;
+  final String title;
+  final String trailing;
+
+  @override
+  Widget build(BuildContext context) {
     return ListTile(
       leading: CustomDotIncomeDetails(
         dotColor: dotColor ?? kPrimaryColor,
