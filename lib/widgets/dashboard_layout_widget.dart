@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/adaptive_layout.dart';
+import 'package:responsive_dash_board/widgets/dash_board_mobile_layout.dart';
+import 'package:responsive_dash_board/widgets/dash_board_tablet_layout.dart';
 import 'package:responsive_dash_board/widgets/dashboard_desktop_layout.dart';
-import 'package:responsive_dash_board/widgets/dashboard_mobile_layout.dart';
+
 
 class DashboardLayoutWidget extends StatelessWidget {
   const DashboardLayoutWidget({super.key});
@@ -9,8 +11,8 @@ class DashboardLayoutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   AdaptiveLayout(
-      mobileLayout: (context) => const  DashboardMobileLayout(),
-      tabletLayout: (context) => const Text('Tablet Layout'),
+      mobileLayout: (context) => const  DashBoardMobileLayout(),
+      tabletLayout: (context) => const DashBoardTabletLayout(),
       desktopLayout: (context) => const  DashboardDesktopLayout(),
     );
   }

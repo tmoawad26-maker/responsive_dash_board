@@ -13,7 +13,6 @@ class CustomDrawerHeader extends StatelessWidget {
         child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CustomRectangleImage(),
         Expanded(
           child: CustomListTileWidget(),
         )

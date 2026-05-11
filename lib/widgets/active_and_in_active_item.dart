@@ -21,6 +21,7 @@ class InActiveDrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: const  EdgeInsets.only(bottom: 18),
       onTap: onTap,
       tileColor: Colors.white,
       leading: Icon(
@@ -54,6 +55,7 @@ class ActiveDrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: const  EdgeInsets.only(bottom: 32),
       onTap: onTap,
       tileColor: Colors.white,
       leading: Icon(

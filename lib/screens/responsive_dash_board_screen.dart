@@ -13,18 +13,6 @@ class DashboardScreen extends StatelessWidget {
     return   const SafeArea(
       child: Scaffold(
         drawer: CustomDrawer(),
-        // appBar: AppBar(
-        //   iconTheme: const IconThemeData(
-        //     color: kLeadingColor
-        //   ),
-        //   // backgroundColor: kPrimaryColor,
-        //   // title: Text(S.of(context).title),
-        //   // titleTextStyle: const  TextStyle(
-        //   //   color: Colors.white,
-        //   //   fontSize: 22,
-        //   //   fontWeight: FontWeight.w400
-        //   // ),
-        // ),
         body: DashboardLayoutWidget(),
       ),
     );

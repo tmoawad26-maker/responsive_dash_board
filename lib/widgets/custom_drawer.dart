@@ -22,11 +22,6 @@ class CustomDrawer extends StatelessWidget {
               height: 8,
             ),
           ),
-          const SliverToBoxAdapter(
-            child: SizedBox(
-              height: 8,
-            ),
-          ),
           const ListDrawerItems(),
           SliverFillRemaining(
             hasScrollBody: false,
