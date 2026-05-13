@@ -9,9 +9,13 @@ class MyCardsAndIncomeSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        SizedBox(height: 20,),
+        SizedBox(
+          height: 20,
+        ),
         MyCardsAndTransactionHistorySection(),
-        SizedBox(height: 24,),
+        SizedBox(
+          height: 24,
+        ),
         IncomeSection()
       ],
     );
