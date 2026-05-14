@@ -51,9 +51,6 @@ class CustomInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
-        Text(
-          'Add more details',
-        )
       ],
     );
   }
