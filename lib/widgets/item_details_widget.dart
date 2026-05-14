@@ -14,8 +14,12 @@ class ItemDetailsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CustomDotIncomeDetails(
-        dotColor: incomeDetailsModel.dotColor,
+      contentPadding: EdgeInsets.zero,
+      leading: Padding(
+        padding: const EdgeInsets.only(left: 40),
+        child: CustomDotIncomeDetails(
+          dotColor: incomeDetailsModel.dotColor,
+        ),
       ),
       title: Text(
         incomeDetailsModel.title,

@@ -17,14 +17,16 @@ class CustomContainerCardWidget extends StatelessWidget {
           color: kPrimaryColor,
           image: const DecorationImage(
             image: AssetImage(AssetData.backgroundCard),
-            fit: BoxFit.fill,
           ),
         ),
-        child: Column(
+        child:  Column(
           children: [
-            const MyCardHeader(),
-            const Expanded(child: SizedBox()),
-            Padding(
+           const  MyCardHeader(),
+           const  Expanded(child: SizedBox()),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Padding(
               padding: const EdgeInsets.only(right: 24.0),
               child: Align(
                 alignment: Alignment.bottomRight,
@@ -49,7 +51,9 @@ class CustomContainerCardWidget extends StatelessWidget {
                 ),
               ),
             ),
-            const Expanded(child: SizedBox(height: 54 - 28)),
+              ],
+            ),
+           const  Expanded(child: SizedBox(height: 54 - 28)),
           ],
         ),
       ),

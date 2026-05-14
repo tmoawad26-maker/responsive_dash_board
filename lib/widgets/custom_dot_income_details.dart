@@ -6,8 +6,8 @@ class CustomDotIncomeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 12,
-      height: 12,
+      width: 8,
+      height: 8,
       decoration: BoxDecoration(
           color: dotColor, borderRadius: BorderRadius.circular(12)),
     );

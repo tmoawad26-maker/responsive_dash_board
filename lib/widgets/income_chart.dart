@@ -16,7 +16,6 @@ class _IncomeChartState extends State<IncomeChart> {
       aspectRatio: 1,
       child: PieChart(getChartData()));
   }
-
   PieChartData getChartData() {
     return PieChartData(
         pieTouchData: PieTouchData(

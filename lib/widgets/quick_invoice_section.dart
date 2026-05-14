@@ -11,14 +11,15 @@ class QuickInvoiceSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const CustomBackgroundContainer(
+    return   CustomBackgroundContainer(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          QuickInvoiceHeader(),
-          LatestTransaction(),
-          SeparateItemsWidget(),
-          CustomInvoiceForm(),
+         const  QuickInvoiceHeader(),
+         const  LatestTransaction(),
+         const  SeparateItemsWidget(),
+         const  CustomInvoiceForm(),
+          CustomTextButton(height: 62,onPressed: (){},)
         ],
       ),
     );

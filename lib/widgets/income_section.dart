@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/custom_background_container.dart';
 import 'package:responsive_dash_board/widgets/income_chart.dart';
@@ -9,13 +11,14 @@ class IncomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+      log(MediaQuery.of(context).size.width.toString());
     return const CustomBackgroundContainer(
       child: Column(
         children: [
           IncomeHeaderWidget(),
           SizedBox(height: 16,),
           Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Expanded(child: IncomeChart()),
               Expanded(child: IncomeDetails())
