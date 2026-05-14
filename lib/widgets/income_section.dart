@@ -5,6 +5,7 @@ import 'package:responsive_dash_board/widgets/custom_background_container.dart';
 import 'package:responsive_dash_board/widgets/income_chart.dart';
 import 'package:responsive_dash_board/widgets/income_details.dart';
 import 'package:responsive_dash_board/widgets/income_header_widget.dart';
+import 'package:responsive_dash_board/widgets/income_section_body.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -17,15 +18,11 @@ class IncomeSection extends StatelessWidget {
         children: [
           IncomeHeaderWidget(),
           SizedBox(height: 16,),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(child: IncomeChart()),
-              Expanded(child: IncomeDetails())
-            ],
-          )
+          IncomeSectionBody()
         ],
       ),
     );
   }
 }
+
+

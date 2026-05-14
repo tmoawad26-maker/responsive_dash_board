@@ -16,7 +16,7 @@ class ItemDetailsWidget extends StatelessWidget {
     return ListTile(
       contentPadding: EdgeInsets.zero,
       leading: Padding(
-        padding: const EdgeInsets.only(left: 40),
+        padding: const EdgeInsets.only(left: 20),
         child: CustomDotIncomeDetails(
           dotColor: incomeDetailsModel.dotColor,
         ),
