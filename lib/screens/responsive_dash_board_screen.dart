@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/core/utilts/size_config.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/dashboard_layout_widget.dart';
 
@@ -7,6 +8,7 @@ class DashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig.init(context);
     return   SafeArea(
       child: Scaffold(
         appBar: MediaQuery.sizeOf(context).width < 800 ? AppBar(
