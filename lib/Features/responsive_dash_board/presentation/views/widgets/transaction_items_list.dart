@@ -1,0 +1,78 @@
+import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/Features/core/utilts/asset_data.dart';
+import 'package:responsive_dash_board/Features/responsive_dash_board/data/models/user_list_tile_model.dart';
+import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/user_list_tile_info_section.dart';
+
+import '../../../../../generated/l10n.dart';
+
+class TransactionItemsList extends StatelessWidget {
+  const TransactionItemsList({super.key});
+  static   List<UserListTileInfoModel> listTransaction = [
+    UserListTileInfoModel(
+        image: AssetData.kFrame,
+        userName: S.current.name,
+        email: S.current.email),
+    UserListTileInfoModel(
+        image: AssetData.kFrame1,
+        userName: S.current.userName2,
+        email: S.current.emailJosua),
+    UserListTileInfoModel(
+        image: AssetData.kFrame,
+        userName: S.current.userName3,
+        email: S.current.emailMohamed),
+    UserListTileInfoModel(
+        image: AssetData.kFrame,
+        userName: S.current.userName4,
+        email: S.current.emailAbdo),
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: List.generate(listTransaction.length, (index) {
+            return index == 0 ?
+              IntrinsicWidth(
+                    child: UserListTileInfoSection(
+                      userListTileInfoModel: listTransaction[index],
+                    ),
+                  ) : Padding(
+                    padding: const EdgeInsets.only(left: 12),
+                    child: IntrinsicWidth(
+                      child: UserListTileInfoSection(
+                    userListTileInfoModel: listTransaction[index],
+                      ),
+                  )
+            );
+        },
+        )
+
+      ),
+    );
+    return SizedBox(
+      height: 80,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          if (index == 0) {
+            return IntrinsicWidth(
+              child: UserListTileInfoSection(
+                userListTileInfoModel: listTransaction[index],
+              ),
+            );
+          } else {
+            return Padding(
+              padding: const EdgeInsets.only(left: 12),
+              child: IntrinsicWidth(
+                child: UserListTileInfoSection(
+                  userListTileInfoModel: listTransaction[index],
+                ),
+              ),
+            );
+          }
+        },
+        itemCount: listTransaction.length,
+      ),
+    );
+  }
+}

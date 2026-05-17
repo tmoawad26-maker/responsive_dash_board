@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:responsive_dash_board/generated/l10n.dart';
-import 'package:responsive_dash_board/screens/responsive_dash_board_screen.dart';
+import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/screens/responsive_dash_board_screen.dart';
 
 class ResponsiveDashboardApp extends StatelessWidget {
   const ResponsiveDashboardApp({super.key});
