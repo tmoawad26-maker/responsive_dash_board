@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/constants.dart';
+import 'package:responsive_dash_board/core/utilts/constants.dart';
 
-import '../../../../core/utilts/styles.dart';
+import '../../../../../core/utilts/styles.dart';
 import '../../../../../generated/l10n.dart';
 
 class QuickInvoiceHeader extends StatelessWidget {

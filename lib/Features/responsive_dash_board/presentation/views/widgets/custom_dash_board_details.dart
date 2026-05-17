@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/data/models/all_expenses_model.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/expenses_header.dart';
 
-import '../../../../core/utilts/constants.dart';
-import '../../../../core/utilts/styles.dart';
+import '../../../../../core/utilts/constants.dart';
+import '../../../../../core/utilts/styles.dart';
 
 class CustomCardItemWidget extends StatelessWidget {
   const CustomCardItemWidget(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/constants.dart';
-import 'package:responsive_dash_board/Features/core/utilts/styles.dart';
+import 'package:responsive_dash_board/core/utilts/constants.dart';
+import 'package:responsive_dash_board/core/utilts/styles.dart';
 
 class CustomTextButton extends StatelessWidget {
   const CustomTextButton({super.key, required this.height, this.onPressed});

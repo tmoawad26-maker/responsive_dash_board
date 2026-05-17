@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/asset_data.dart';
+import 'package:responsive_dash_board/core/utilts/asset_data.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/data/models/user_list_tile_model.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/user_list_tile_info_section.dart';
 

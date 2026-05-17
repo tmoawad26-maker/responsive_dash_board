@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/constants.dart';
-import 'package:responsive_dash_board/Features/core/utilts/styles.dart';
+import 'package:responsive_dash_board/core/utilts/constants.dart';
+import 'package:responsive_dash_board/core/utilts/styles.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({super.key,required this.onPressed});

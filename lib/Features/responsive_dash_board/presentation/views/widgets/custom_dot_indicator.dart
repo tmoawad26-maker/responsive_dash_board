@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/constants.dart';
+import 'package:responsive_dash_board/core/utilts/constants.dart';
 
 class CustomDotIndicator extends StatelessWidget {
   const CustomDotIndicator({super.key, required this.isActive});

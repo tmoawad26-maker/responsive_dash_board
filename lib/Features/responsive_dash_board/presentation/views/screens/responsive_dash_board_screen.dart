@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/size_config.dart';
+import 'package:responsive_dash_board/core/utilts/size_config.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/dashboard_layout_widget.dart';
 

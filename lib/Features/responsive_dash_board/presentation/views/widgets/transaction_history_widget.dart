@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/styles.dart';
+import 'package:responsive_dash_board/core/utilts/styles.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/transaction_history_header_widget.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/transaction_history_list_view.dart';
 

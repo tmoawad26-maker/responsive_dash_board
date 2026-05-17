@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/Features/core/utilts/constants.dart';
+import 'package:responsive_dash_board/core/utilts/constants.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/data/models/income_details_model.dart';
 import 'package:responsive_dash_board/Features/responsive_dash_board/presentation/views/widgets/item_details_widget.dart';
 
