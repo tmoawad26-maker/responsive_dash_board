@@ -32,7 +32,7 @@ class CustomContainerCardWidget extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 child: Text(
                   '0918 8124 0042 8129',
-                  style: Styles.textStyle16.copyWith(
+                  style: Styles.textStyle16(context).copyWith(
                     color: const Color(0xffffffff),
                   ),
                 ),
@@ -44,7 +44,7 @@ class CustomContainerCardWidget extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 child: Text(
                   '12/20-124',
-                  style: Styles.textStyle16.copyWith(
+                  style: Styles.textStyle16(context).copyWith(
                     color: const Color(0xffffffff),
                     fontWeight: FontWeight.w400,
                   ),
@@ -53,7 +53,7 @@ class CustomContainerCardWidget extends StatelessWidget {
             ),
               ],
             ),
-           const  Expanded(child: SizedBox(height: 54 - 28)),
+           const  Flexible(child:   SizedBox(height: 54 - 28)),
           ],
         ),
       ),

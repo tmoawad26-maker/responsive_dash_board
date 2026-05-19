@@ -17,7 +17,7 @@ class DateExpensesAndIncome extends StatelessWidget {
         children: [
           Text(
             S.of(context).periodType,
-            style: Styles.textStyle16.copyWith(
+            style: Styles.textStyle16(context).copyWith(
               color: kTextColor,
               fontWeight: FontWeight.w500,
             ),

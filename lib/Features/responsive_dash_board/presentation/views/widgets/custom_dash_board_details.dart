@@ -54,18 +54,18 @@ class CustomCardItemWidget extends StatelessWidget {
               const SizedBox(height: 34),
               Text(
                 allExpensesModel.title,
-                style: Styles.textStyle16
+                style: Styles.textStyle16(context)
                     .copyWith(color: titleColor ?? Colors.white),
               ),
               const SizedBox(
                 height: 8,
               ),
-              Text(allExpensesModel.date, style: Styles.textStyle14.copyWith(
+              Text(allExpensesModel.date, style: Styles.textStyle14(context).copyWith(
                 color: dateColor ?? const  Color(0xffAAAAAA)
               ),),
               Text(
                 allExpensesModel.price,
-                style: Styles.textStyle24
+                style: Styles.textStyle24(context)
                     .copyWith(color: amountColor ?? Colors.white),
               ),
             ],

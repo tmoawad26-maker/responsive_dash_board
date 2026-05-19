@@ -13,42 +13,39 @@ class UserListTileInfoSection extends StatelessWidget {
   final UserListTileInfoModel userListTileInfoModel;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration:   BoxDecoration(
-        color: const  Color(0xffFAFAFA),
-        borderRadius: BorderRadius.circular(12)
+    return ListTile(
+      leading: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: SvgPicture.asset(
+          AssetData.kFrame,
+          width: 32,
+          height: 32,
+        ),
       ),
-      child: Row(
-        children: [
-          SvgPicture.asset(
-            AssetData.kFrame,
-            width: 32,
-            height: 32,
-          ),
-          const SizedBox(
-            width: 3.5,
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                userListTileInfoModel.userName,
-                // S.of(context).name,
-                style: Styles.textStyle16.copyWith(color: kTextColor),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                userListTileInfoModel.email,
-                style: const TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w400,
-                  color: Color(0xffAAAAAA),
-                ),
-              )
-            ],
-          )
-        ],
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          userListTileInfoModel.userName,
+          // S.of(context).name,
+          style: Styles.textStyle16(context).copyWith(color: kTextColor),
+        ),
       ),
+      subtitle: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          userListTileInfoModel.email,
+          style: const TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w400,
+            color: Color(0xffAAAAAA),
+          ),
+        ),
+      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      tileColor: const Color(0xffFAFAFA),
     );
   }
 }

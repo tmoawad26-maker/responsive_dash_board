@@ -22,7 +22,7 @@ class CustomTextButton extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             'Add more details',
-            style: Styles.textStyle18.copyWith(
+            style: Styles.textStyle18(context).copyWith(
               color: kPrimaryColor,
             ),
           ),

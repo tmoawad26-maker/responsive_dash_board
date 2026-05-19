@@ -35,7 +35,7 @@ class _MyCardSectionState extends State<MyCardSection> {
       // const  SizedBox(height: 24,),
         Text(
         'My card',
-        style: Styles.textStyle20.copyWith(color: kTextColor),
+        style: Styles.textStyle20(context).copyWith(color: kTextColor),
       ),
        const  SizedBox(height: 20,),
        

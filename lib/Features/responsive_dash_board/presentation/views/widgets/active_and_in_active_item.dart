@@ -30,7 +30,7 @@ class InActiveDrawerItem extends StatelessWidget {
       ),
       title: Text(
         drawerItemModel.title,
-        style: Styles.textStyle16.copyWith(
+        style: Styles.textStyle16(context).copyWith(
             color: textColor ?? kTextColor, fontWeight: FontWeight.w500),
       ),
     );
@@ -62,11 +62,15 @@ class ActiveDrawerItem extends StatelessWidget {
         drawerItemModel.icon,
         color: iconColor ?? kPrimaryColor,
       ),
-      title: Text(
-        drawerItemModel.title,
-        style: Styles.textStyle16.copyWith(
-          color: textColor ?? kTextColor,
-          fontWeight: FontWeight.w600,
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          drawerItemModel.title,
+          style: Styles.textStyle16(context).copyWith(
+            color: textColor ?? kTextColor,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       trailing: Container(

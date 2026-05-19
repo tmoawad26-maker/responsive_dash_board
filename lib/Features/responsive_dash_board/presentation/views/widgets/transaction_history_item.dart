@@ -19,16 +19,16 @@ class TransactionHistoryItem extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         title: Text(
             transactionHistoryItem.title,
-          style: Styles.textStyle16.copyWith(color: kTextColor),
+          style: Styles.textStyle16(context).copyWith(color: kTextColor),
         ),
         subtitle: Text(
           transactionHistoryItem.subTitle,
-          style: Styles.textStyle16.copyWith(
+          style: Styles.textStyle16(context).copyWith(
               fontWeight: FontWeight.w400, color: const Color(0xffAAAAAA)),
         ),
         trailing: Text(
           '\$${transactionHistoryItem.price}',
-          style: Styles.textStyle20.copyWith(color: 
+          style: Styles.textStyle20(context).copyWith(color: 
           transactionHistoryItem.isWithdrawal
                   ? const Color(0xffF3735E)
                   : const Color(0xff7DD97B)),

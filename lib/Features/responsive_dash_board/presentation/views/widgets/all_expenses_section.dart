@@ -17,7 +17,7 @@ class AllExpensesSection extends StatelessWidget {
               children: [
                 Text(
                   S.of(context).allExpenses,
-                  style: Styles.textStyle20
+                  style: Styles.textStyle20(context)
                       .copyWith(color: const Color(0xff064061)),
                 ),
                 const AllExpenses()

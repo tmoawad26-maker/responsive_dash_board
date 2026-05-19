@@ -13,7 +13,7 @@ class LatestTransaction extends StatelessWidget {
       children: [
         Text(
           S.of(context).latestTransaction,
-          style: Styles.textStyle16.
+          style: Styles.textStyle16(context).
               copyWith(
               fontWeight: FontWeight.w500,
               color: const Color(0xff064061)),

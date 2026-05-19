@@ -13,14 +13,14 @@ class MyCardHeader extends StatelessWidget {
     return ListTile(
       title: Text(
         'Name card',
-        style: Styles.textStyle16.copyWith(
+        style: Styles.textStyle16(context).copyWith(
           color: const Color(0xffffffff),
           fontWeight: FontWeight.w400,
         ),
       ),
       subtitle: Text(
         'Syah Bandi',
-        style: Styles.textStyle20.copyWith(
+        style: Styles.textStyle20(context).copyWith(
           color: const Color(0xffffffff),
           fontWeight: FontWeight.w500,
         ),

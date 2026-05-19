@@ -15,7 +15,7 @@ class IncomeHeaderWidget extends StatelessWidget {
       children: [
         Text(
           'Income',
-          style: Styles.textStyle20.copyWith(color: kTextColor),
+          style: Styles.textStyle20(context).copyWith(color: kTextColor),
         ),
         const DateExpensesAndIncome(),
       ],

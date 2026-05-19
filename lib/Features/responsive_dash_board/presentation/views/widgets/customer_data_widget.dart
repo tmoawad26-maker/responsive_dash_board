@@ -15,7 +15,7 @@ class CustomerDataWidget extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Styles.textStyle16
+          style: Styles.textStyle16(context)
               .copyWith(fontWeight: FontWeight.w500, color: kTextColor),
         ),
         CustomTextField(hintText: hintText,suffixIcon: suffixIcon,)

@@ -19,7 +19,7 @@ class CustomElevatedButton extends StatelessWidget {
         ),
         child: Text(
           'Send Money',
-          style: Styles.textStyle16.copyWith(
+          style: Styles.textStyle16(context).copyWith(
             color: Colors.white,
           ),
         ));

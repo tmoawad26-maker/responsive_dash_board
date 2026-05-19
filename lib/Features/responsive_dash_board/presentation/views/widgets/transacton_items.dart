@@ -20,7 +20,7 @@ class TransactionItems extends StatelessWidget {
           children: [
             Text(
              transactionItemModel.userName,
-              style: Styles.textStyle16.copyWith(color: kTextColor),
+              style: Styles.textStyle16(context).copyWith(color: kTextColor),
             ),
             const SizedBox(
               height: 6,
@@ -28,7 +28,7 @@ class TransactionItems extends StatelessWidget {
             Text(
              transactionItemModel.email,
               style:
-                  Styles.textStyle12.copyWith(color: const Color(0xffAAAAAA)),
+                  Styles.textStyle12(context).copyWith(color: const Color(0xffAAAAAA)),
             )
           ],
         )

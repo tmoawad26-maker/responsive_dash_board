@@ -13,7 +13,7 @@ class QuickInvoiceHeader extends StatelessWidget {
       children: [
         Text(
           S.of(context).quickInvoice,
-          style: Styles.textStyle20.copyWith(color: kTextColor),
+          style: Styles.textStyle20(context).copyWith(color: kTextColor),
         ),
         const Spacer(),
         CircleAvatar(

@@ -14,13 +14,13 @@ class TransactionHistoryHeaderWidget extends StatelessWidget {
       children: [
         Text(
           'Transaction History',
-          style: Styles.textStyle20.copyWith(color: kTextColor),
+          style: Styles.textStyle20(context).copyWith(color: kTextColor),
         ),
         Padding(
           padding: const EdgeInsets.only(right: 10),
           child: Text(
             'See all',
-            style: Styles.textStyle16
+            style: Styles.textStyle16(context)
                 .copyWith(color: kPrimaryColor, fontWeight: FontWeight.w500),
           ),
         )
